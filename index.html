@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ふなばし ビジネスサミット 申込フォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>ふなばし ビジネスサミット</h1>
+        <p class="subtitle">申込フォーム</p>
+        <div class="event-details">
+            <p>ふなばしでビジネスを行うすべての方がお申込みできます。</p>
+            <p>🏢 船橋商工会議所 6F 大ホール</p>
+            <p>📅 12/5(金)</p>
+            <p>🕒 17:00～20:00（開場 16:30～）</p>
+            <p>💴 2000円/人</p>
+            <div class="notes">
+                <p>※ 複数人での参加の際は個人情報となりますのでそれぞれでお申込みください。</p>
+                <p>※ フォームに入力いただいた情報は、配布する参加者名簿の作成に利用させて頂きます。</p>
+                <p>※ 当日は広報等で使用する写真等の撮影が入りますのでご了承ください。</p>
+                <p>※ 情報は参加者名簿の作成に限り利用し、事務局が管理します。</p>
+            </div>
+        </div>
+
+        <form id="booking-form">
+            <label for="name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="name" name="お名前" required>
+
+            <label for="furigana">フリガナ <span class="required">必須</span></label>
+            <input type="text" id="furigana" name="フリガナ" required>
+
+            <label for="email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="email" name="メールアドレス" required>
+
+            <label for="phone">電話番号 <span class="required">必須</span></label>
+            <input type="tel" id="phone" name="電話番号" required>
+
+            <label for="company">事業所名 <span class="required">必須</span></label>
+            <input type="text" id="company" name="事業所名" required>
+
+            <label for="industry">業種 <span class="required">必須</span></label>
+            <input type="text" id="industry" name="業種" required>
+
+            <label for="organization">所属団体など</label>
+            <input type="text" id="organization" name="所属団体など">
+
+            <label for="hometown">出身地</label>
+            <input type="text" id="hometown" name="出身地">
+
+            <label for="pr">活動・自己PR（150字以内）</label>
+            <textarea id="pr" name="活動・自己PR" maxlength="150"></textarea>
+
+            <button type="submit">送信</button>
+        </form>
+        <div id="thank-you-message" style="display: none;">
+            <h2>回答ありがとうございました！</h2>
+            <p>ご登録いただいたメールアドレスに確認メールを送信しました。</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
